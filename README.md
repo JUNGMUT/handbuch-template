@@ -15,8 +15,15 @@ cd client-training-content
 
 # Skill installieren (Pfad ggf. anpassen, je nachdem wo dein
 # Claude-Code/Cowork-Setup Skills erwartet, z. B. ~/.claude/skills/)
+# WICHTIG!!! Speichert den Skill nur für das Claude CLI 
 cp -r ../client-training-pdf ~/.claude/skills/client-training-pdf
 ```
+
+### Zum Einrichten mit Claude und Cowork 
+1. Claude App öffnen 
+2. Einstellungen -> Skills -> Hinzufügen -> Skill hochladen
+3. Skill.zip hochladen
+4. Skill kann nun auch genutzt werden
 
 ## Neuen Kunden anlegen
 
@@ -29,7 +36,7 @@ Dann in `<kundenname>/`:
 2. Screenshots anpssen nach `<kundenname>/screenshots/<thema>/*.png` sortieren
 4. Befehl ausführen
 
-Dann im Chat: *"Baue das Schulungshandbuch für \<kundenname\>. Den Styleguide kannst du aus (website link / scss files / figma link) zusammenbauen"* — der Skill übernimmt den Rest.
+Dann im Chat: *"/client-training-pdf-skill Baue das Schulungshandbuch für \<kundenname\>. Den Styleguide kannst du aus (website link / scss files / figma link) zusammenbauen"* — der Skill übernimmt den Rest.
 
 ## Bestehenden Kunden erweitern
 
