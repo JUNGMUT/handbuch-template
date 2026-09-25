@@ -25,23 +25,11 @@ cp -r _template <kundenname>
 ```
 
 Dann in `<kundenname>/`:
-1. `design-tokens.json` ausfüllen (Farben aus SCSS/Figma, siehe `f4t/` als
-   Beispiel)
-2. `index.md` mit Stichpunkten befüllen (Konvention: siehe
-   `client-training-pdf/references/content-conventions.md` im Skill —
-   Kurzfassung: Zeilen mit `AUSBAU:` werden von Claude zu vollständigen
-   Absätzen ausgebaut, alles andere gilt als fix vorgegeben)
-3. Screenshots nach `<kundenname>/screenshots/<thema>/*.png` sortieren
-4. Committen + pushen
+1. `index.md` mit Stichpunkten befüllen oder an die neuen Anforderungen anpassen (Konvention: siehe `client-training-pdf/references/content-conventions.md` im Skill — Kurzfassung: Zeilen mit `AUSBAU:` werden von Claude zu vollständigen Absätzen ausgebaut, alles andere gilt als fix vorgegeben)
+2. Screenshots anpssen nach `<kundenname>/screenshots/<thema>/*.png` sortieren
+4. Befehl ausführen
 
-```bash
-git add <kundenname>/
-git commit -m "Neuer Kunde: <kundenname>"
-git push
-```
-
-Dann im Chat: *"Baue das Schulungshandbuch für \<kundenname\>"* — der Skill
-übernimmt den Rest.
+Dann im Chat: *"Baue das Schulungshandbuch für \<kundenname\>. Den Styleguide kannst du aus (website link / scss files / figma link)"* — der Skill übernimmt den Rest.
 
 ## Bestehenden Kunden erweitern
 
@@ -59,12 +47,6 @@ client-training-content/
 │   ├── index.md
 │   ├── design-tokens.json
 │   └── screenshots/        (leer)
-└── f4t/                    ← Referenzbeispiel, funktionierend & getestet
-    ├── index.md
-    ├── design-tokens.json
-    ├── _variables.scss     (Quelle der Design-Tokens, zur Nachvollziehbarkeit)
-    ├── _mixins.scss
-    └── screenshots/
 ```
 
 `jungmut/` (falls vorhanden) ist ein zweites Test-Beispiel: gleicher
@@ -76,7 +58,4 @@ durch reale Screenshots ersetzen.
 
 ## Warum kein Skill-Code in diesem Repo?
 
-Trennung von Engine (Skill, ändert sich selten, gilt für alle Kunden) und
-Content (ändert sich ständig, ist pro Kunde). So bleibt eine
-Skill-Verbesserung (z. B. neue Bild-Layout-Option) unabhängig vom
-Content-Stand jedes einzelnen Kunden versionierbar.
+Den Skill findest Du in der ZIP im Repo
