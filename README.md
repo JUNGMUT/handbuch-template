@@ -29,7 +29,7 @@ Dann in `<kundenname>/`:
 2. Screenshots anpssen nach `<kundenname>/screenshots/<thema>/*.png` sortieren
 4. Befehl ausführen
 
-Dann im Chat: *"Baue das Schulungshandbuch für \<kundenname\>. Den Styleguide kannst du aus (website link / scss files / figma link)"* — der Skill übernimmt den Rest.
+Dann im Chat: *"Baue das Schulungshandbuch für \<kundenname\>. Den Styleguide kannst du aus (website link / scss files / figma link) zusammenbauen"* — der Skill übernimmt den Rest.
 
 ## Bestehenden Kunden erweitern
 
@@ -46,16 +46,9 @@ client-training-content/
 ├── _template/              ← Vorlage für neue Kunden (kopieren, nicht editieren)
 │   ├── index.md
 │   ├── design-tokens.json
-│   └── screenshots/        (leer)
+│   └── screenshots/        (prefilled content von F4T)
 ```
 
-`jungmut/` (falls vorhanden) ist ein zweites Test-Beispiel: gleicher
-Content wie `f4t/`, aber Design-Tokens live von jungmut.com extrahiert —
-zeigt, dass derselbe Content-Code mit komplett anderem Branding
-funktioniert. Die Screenshots darin sind zu Testzwecken von F4T
-wiederverwendet (nicht echte Jungmut-Screenshots) — vor echter Auslieferung
-durch reale Screenshots ersetzen.
 
-## Warum kein Skill-Code in diesem Repo?
-
+## Skill
 Den Skill findest Du in der ZIP im Repo
