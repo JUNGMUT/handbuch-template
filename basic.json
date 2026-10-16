@@ -1,0 +1,29 @@
+{
+  "_hinweis": "Beschreibt basic.pdf für den client-training-pdf-Skill. Nach jedem Neubau der basic.pdf aktualisieren (Seitenzahlen der Kapitel!).",
+  "title": "WordPress Redaktionshandbuch",
+  "version": "1.0",
+  "pages": 39,
+  "cover_page": 1,
+  "toc_page": 2,
+  "cover_label": {
+    "template": "Schulungsunterlage · {client}",
+    "x_right": 532.586,
+    "y_top": 768.384,
+    "y_bottom": 779.126,
+    "font_size_px": 10.5,
+    "color": "#ffffff",
+    "background": "#0030d0"
+  },
+  "chapters": [
+    {"num": "1",   "title": "WordPress Grundlagen",          "page": 3},
+    {"num": "1.1", "title": "Mediathek",                     "page": 6},
+    {"num": "2",   "title": "Benutzerverwaltung",            "page": 10},
+    {"num": "3",   "title": "Menüverwaltung",                "page": 13},
+    {"num": "4",   "title": "Seiten anlegen mit Gutenberg",  "page": 17},
+    {"num": "5",   "title": "Seiten anlegen mit Elementor",  "page": 22},
+    {"num": "6",   "title": "Do's & Don'ts",                 "page": 30},
+    {"num": "7",   "title": "Blogbeitrag anlegen",           "page": 31},
+    {"num": "8",   "title": "Custom Post Types",             "page": 35},
+    {"num": "9",   "title": "Formulare mit WPForms",         "page": 37}
+  ]
+}
